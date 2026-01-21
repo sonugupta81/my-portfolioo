@@ -17,8 +17,8 @@ function home() {
             eraseSpeed={50}
             eraseDelay={1000}
             typingDelay={50}
-            cursor='_' */}
-            />
+            cursor='_'
+            /> */}
           </div>
         </div>
       </div>
