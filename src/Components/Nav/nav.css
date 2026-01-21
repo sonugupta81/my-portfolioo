@@ -7,7 +7,8 @@ nav {
   position: fixed;
   padding: 40px;
   top: 0;
-  background-color: black;
+  background-color: #0a0707;
+  z-index: 20;
 }
 nav ul a {
   cursor: pointer;
@@ -31,7 +32,7 @@ ul {
 }
 nav h1 {
   font-size: 30px;
-  background: linear-gradient(to right, #f906c0, #e20808c8);
+  background: linear-gradient(to right, #e4e803, #e5dfdfc8);
   background-clip: text;
   color: transparent;
 }

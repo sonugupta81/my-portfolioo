@@ -10,7 +10,7 @@ function nav() {
   
   return (
     <nav>
-      <h1>SONUTECH</h1>
+      <h1>I.TECH</h1>
       <ul className="desktopmenu">
         <Link to="home" activeClass="active" spy={true} smooth={true} duration={500}><li>Home</li></Link>
         <Link to="projects" activeClass="active" spy={true} smooth={true} duration={500}><li>Projects</li></Link>

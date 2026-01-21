@@ -10,7 +10,7 @@ function home() {
         <div className="homedetails">
           <div className="line1">I'M</div>
           <div className="line2"> SONU K. GUPTA</div>
-          <div className="line3">
+          <div className="line3"> WEB DEVELOPER
             {/* <TypingEffect
             text={['A MERN Stack Developer', 'A Frontend Developer', 'A Backend Developer', 'Web Developer','Software Engineer']}
             speed={500}
@@ -20,6 +20,7 @@ function home() {
             cursor='_'
             /> */}
           </div>
+          <button className="hirebtn">Hire Me</button>
         </div>
       </div>
       <div className="Righthome">
