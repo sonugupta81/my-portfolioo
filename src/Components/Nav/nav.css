@@ -1,0 +1,89 @@
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 40px;
+  top: 0;
+  background-color: black;
+}
+nav ul a {
+  cursor: pointer;
+}
+nav ul a:hover {
+  color: rgb(212, 243, 10);
+  border-bottom: 2px solid rgb(7, 246, 242);
+}
+.active {
+  color: rgb(194, 240, 7);
+  border-bottom: 2px solid rgb(7, 240, 228);
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  color: white;
+  font-size: 18px;
+}
+nav h1 {
+  font-size: 30px;
+  background: linear-gradient(to right, #f906c0, #e20808c8);
+  background-clip: text;
+  color: transparent;
+}
+.hemburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-direction: column;
+  display: none;
+}
+.hem {
+  width: 40px;
+  height: 2px;
+  background-color: aliceblue;
+  transition: all 0.5s;
+}
+.mobilemenu {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 100vh;
+  background-color: #0a070775;
+  backdrop-filter: blur(10px) ;
+  right: 0;
+  transform: translatex(100%);
+  flex-direction: column;
+  transition: all 0.5s;
+  gap: 50px;
+}
+.activehem .hem:nth-child(1) {        
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;       
+}
+.activehem .hem:nth-child(2) {
+    opacity: 0;
+
+}
+.activehem .hem:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -12px;
+}
+.activemob {
+  transform: translatex(0%);
+}
+@media (max-width: 750px) {
+  .desktopmenu {
+    display: none;
+  }
+  .hemburger {
+    display: flex;
+  }
+}
