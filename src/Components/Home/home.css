@@ -14,65 +14,62 @@
 .Righthome{
     img{
         width: 60%;
-        height: auto;
         filter: drop-shadow(2px 2px 20px  rgb(218, 218, 225));
+        
     }
 }
 
 .Lefthome {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.homedetails {
+  font-size: 2vmax;
+}
+.line1 {
+  font-size: 0.8em;
+}
+.line2 {
+  font-size: 2em;
+  background: linear-gradient(to right, #e4e803, #e5dfdfc8);
+  background-clip: text;
+  color: transparent;
+}
+.line3 {
+  font-size: 0.8em;
+}
+.homedetails .hirebtn {
+  padding: 10px 30px;
+  color: rgb(17, 11, 11);
+  background-color: rgb(207, 247, 33);
+  border: 2px solid rgb(198, 246, 23);
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-size: 19px;
+  transition: all 0.2s;
+}
+.homedetails .hirebtn:hover {
+  background-color: transparent;
+  color: rgb(218, 233, 10);
+}
+@media (max-width: 750px) {
+  #home {
+    flex-direction: column-reverse;
+  }
+  .Lefthome,
+  .Righthome {
+    width: 100%;
+    height: 50vh;
+  }
+  .Righthome img {
     width: 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    
-}
-
-.homedetails{
-    font-size: 2vmax;
-
-}
-.line1{
-    font-size: 0.8em;
-}
-.line2{
-    font-size: 2em;
-     background: linear-gradient(to right, #e4e803, #e5dfdfc8);
-    background-clip: text;
-    color: transparent;
-}
-.line3{
-    font-size: 0.8em;
-}
-.homedetails .hirebtn{
-    
-    padding: 10px 30px; 
-    color: rgb(17, 11, 11);
-    background-color: rgb(207, 247, 33);
-    border:2px solid rgb(198, 246, 23);
-    cursor: pointer;
-    margin-top: 30px;
-    border-radius: 20px;
-    font-size: 19px;
-    transition: all 0.2s;
-
-}
-.homedetails .hirebtn:hover{
-    background-color: transparent;
-    color: rgb(218, 233, 10);
-}
-@media  (max-width: 750px){
-    #home{
-        flex-direction: column-reverse;
-    }
-    .Lefthome, .Righthome{
-        width: 100%;
-        height: 50vh;
-    }
-    .Righthome img{
-        width: 100%;
-        height: 50vh;
-        align-items: end;
-    }
+    height: 20vh;
+    align-items: end;
+  }
 }
