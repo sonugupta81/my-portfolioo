@@ -4,6 +4,8 @@ import Man from "../../assets/image/sonuv.jpg";
 import TypingEffect from 'react-typing-effect';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useNavigate } from "react-router-dom";
+
 
 function home() {
   useGSAP(()=>{

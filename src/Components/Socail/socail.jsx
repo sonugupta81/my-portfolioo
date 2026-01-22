@@ -14,11 +14,11 @@ function Socail() {
         <FaGithub />
       </a>
 
-      <a href="" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/sonu-gupta-b65910391?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
         <FaLinkedin />
       </a>
 
-      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/qr/YRUERJ24JSL3F1" target="_blank" rel="noopener noreferrer">
         <FaTwitter />
       </a>
     </div>

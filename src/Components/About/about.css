@@ -1,87 +1,95 @@
 #about {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   overflow: hidden;
 }
+
+/* LEFT */
 .leftabout {
   width: 50%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   gap: 40px;
 }
+
+/* CIRCLE */
 .circle-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-.circle-line {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #bff51e;
-  box-shadow: 2px 2px 10px #bff51e;
-}
-.line {
-  width: 2px;
-  height: 120px;
-  background-color: #f0f0f0;
-}
-.aboutdetails {
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
-.personalinfo ul {
-  list-style:none;
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #bff51e;
+  box-shadow: 0 0 15px #bff51e;
 }
-.personalinfo h1 {
-  background: linear-gradient(to right, #e803ba, #e5dfdfc8);
+
+.line {
+  width: 3px;
+  height: 120px;
+  background-color: #ccc;
+}
+
+/* DETAILS */
+.aboutdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutdetails h1 {
+  background: linear-gradient(to right, #e803ba, #ffffff);
   background-clip: text;
   color: transparent;
 }
-.education h1 {
-  background: linear-gradient(to right, #e803ba, #e5dfdfc8);
-  background-clip: text;
-  color: transparent;
+
+.aboutdetails ul {
+  list-style: none;
+  padding: 0;
 }
-.skills h1 {
-  background: linear-gradient(to right, #e803ba, #e5dfdfc8);
-  background-clip: text;
-  color: transparent;
-}
+
 .aboutdetails ul li {
-  margin-bottom: 10px;
-  font-size: 10px;
+  font-size: 14px;
   color: #d4d4d4;
+  margin-bottom: 8px;
 }
+
 .aboutdetails ul li span {
   font-weight: bold;
-  background: linear-gradient(to right, #dde803, #e2e4dcf0);
+  background: linear-gradient(to right, #dde803, #ffffff);
   background-clip: text;
   color: transparent;
 }
-@media(max-width: 750px) {
+
+/* RIGHT */
+.rightabout {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* MOBILE */
+@media (max-width: 750px) {
   #about {
     flex-direction: column;
   }
-  .leftabout  {
-    width: 100%;
-    padding: 10px;
-    
-  }
+
+  .leftabout,
   .rightabout {
     width: 100%;
+    padding: 20px;
+  }
+
+  .circle {
+    width: 45px;
+    height: 45px;
   }
 }

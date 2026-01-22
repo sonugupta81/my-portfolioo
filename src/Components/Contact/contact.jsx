@@ -21,13 +21,13 @@ function contact() {
     end:"top 30%"
   }
 })
-gsap.from("from", {
+gsap.from("form", {
   x:100,
   duration: 1,
   opacity: 0, 
   stagger:1,    
   scrollTrigger: {
-    trigger: "from",
+    trigger: "form",
     scroll:"body",
     scrub:2,
     start:"top 80%",
@@ -41,7 +41,7 @@ gsap.from("from", {
         <img src={Con}alt='contact'/>
       </div>
       <div className="rightcontact">
-        <form action="https://formspree.io/f/xpwzrvpo" method="POST">
+        <form action="https://formspree.io/f/meeaokln" method="POST">
         <input name="Username" type="text" placeholder='Name'/>
         <input name="Email" type="email" placeholder='Email' />
         <textarea name="message" id="textarea" placeholder='messageme'></textarea>
