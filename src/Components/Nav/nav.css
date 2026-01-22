@@ -21,7 +21,7 @@ nav ul a:hover {
   color: rgb(194, 240, 7);
   border-bottom: 2px solid rgb(7, 240, 228);
 }
-ul {
+nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +43,7 @@ nav h1 {
   gap: 8px;
   flex-direction: column;
   display: none;
+  cursor: pointer;
 }
 .hem {
   width: 40px;

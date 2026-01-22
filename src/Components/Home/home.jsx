@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import Man from "../../assets/image/man.png";  
+import Man from "../../assets/image/sonuv.jpg";  
 import TypingEffect from 'react-typing-effect';
 
 function home() {

@@ -1,0 +1,54 @@
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Anchor reset */
+.social a {
+  text-decoration: none;
+}
+
+/* Icons style */
+.social a svg {
+  font-size: 35px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.social a:nth-child(1):hover svg {
+  color: #e1306c; /* Instagram */
+  transform: scale(1.2);
+}
+
+.social a:nth-child(2):hover svg {
+  color: #171515; /* GitHub */
+  transform: scale(1.2);
+}
+
+.social a:nth-child(3):hover svg {
+  color: #0a66c2; /* LinkedIn */
+  transform: scale(1.2);
+}
+
+.social a:nth-child(4):hover svg {
+  color: #1da1f2; /* Twitter */
+  transform: scale(1.2);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .social {
+    gap: 18px;
+  }
+
+  .social a svg {
+    font-size: 28px;
+  }
+}

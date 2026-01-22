@@ -2,20 +2,32 @@
 import {useRef} from "react";
 import "./nav.css";
 import{ Link} from "react-scroll";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 function nav() {
   let menuRef = useRef();
   let mobRef = useRef();
-  
+  useGSAP(()=>{
+gsap.from("nav h1",{
+  y:100,
+  direction:1,
+  opacity:0
+})
+gsap.from("nav li",{
+  y:100,
+  direction:1,
+  opacity:0
+})
+  })
   
   return (
     <nav>
       <h1>I.TECH</h1>
       <ul className="desktopmenu">
         <Link to="home" activeClass="active" spy={true} smooth={true} duration={500}><li>Home</li></Link>
+       <Link to="about" activeClass="active" spy={true} smooth={true} duration={500}><li>About</li></Link>
         <Link to="projects" activeClass="active" spy={true} smooth={true} duration={500}><li>Projects</li></Link>
         <Link to="contact" activeClass="active" spy={true} smooth={true} duration={500}><li>Contact</li></Link>
-        <Link to="about" activeClass="active" spy={true} smooth={true} duration={500}><li>About</li></Link>
       </ul>
       <div className="hemburger" ref={menuRef} onClick={()=>{
         mobRef.current.classList.toggle("activemob")
@@ -27,9 +39,9 @@ function nav() {
       </div>
       <ul className="mobilemenu" ref={mobRef}>
          <Link to="home" activeClass="active" spy={true} smooth={true} duration={500}><li>Home</li></Link>
+        <Link to="about" activeClass="active" spy={true} smooth={true} duration={500}><li>About</li></Link>
         <Link to="projects" activeClass="active" spy={true} smooth={true} duration={500}><li>Projects</li></Link>
         <Link to="contact" activeClass="active" spy={true} smooth={true} duration={500}><li>Contact</li></Link>
-        <Link to="about" activeClass="active" spy={true} smooth={true} duration={500}><li>About</li></Link>
       </ul>
     </nav>
   );

@@ -1,0 +1,84 @@
+.card {
+  width: 90%;
+  max-width: 400px;
+  height: 180px;
+  background: linear-gradient(to top, #0f1a1c), black;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow:
+    2px 2px 10px #070a0b,
+    -2px -2px 10px #070a0b;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  margin-top:20pxx;
+  align-content: center;
+  flex-shrink: 0;
+}
+.card:hover {
+  box-shadow:
+    0 0 10px #0b8fd6,
+    0 0 40px #00d4ff,
+    2px 2px 10px #070a0b,
+    -2px -2px 10px #070a0b;
+}
+.card h2 {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to right, #cfff23, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  text-align: center;
+  transition: opacity 0.5s;
+}
+.card:hover h2 {
+  opacity: 0;
+}
+.hovercard img {  
+  height: 80%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hovercard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+  z-index: 2;
+}
+.card:hover .hovercard {
+  transform: translateY(0%);
+}
+.rightabout{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+  flex-direction: column;
+  gap: 20px;
+}
+@media(max-width: 750px) {
+  #about {
+    flex-direction: column;
+  }
+  .leftabout  {
+    width: 100%;
+    padding: 10px;
+    
+  }
+  .rightabout {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
