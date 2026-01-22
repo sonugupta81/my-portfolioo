@@ -2,8 +2,33 @@ import React from 'react'
 import "./home.css"
 import Man from "../../assets/image/sonuv.jpg";  
 import TypingEffect from 'react-typing-effect';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function home() {
+  useGSAP(()=>{
+    let tl1=gsap.timeline();
+    tl1.from(".line1",{
+      y:80,
+      direction:1,
+      opacity:0
+    })
+     tl1.from(".line2",{
+      y:80,
+      direction:1,
+      opacity:0
+    })
+     tl1.from(".line3",{
+      y:80,
+      direction:1,
+      opacity:0
+    })
+    gsap.from(".Righthome img",{
+      x:200,
+      direction:1,
+      opacity:0
+    })
+  })
   return (
     <div id="home">
       <div className="Lefthome">

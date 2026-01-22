@@ -2,12 +2,45 @@
 import React from 'react'
 import "./projects.css"
 import Card from '../../Components/Card/card.jsx';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/src/all";
+gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
 
   const handleClick = (url) => {
     window.open(url, "_blank");
   };
+  useGSAP(() => {
+    gsap.from("#projects", {
+  y:100,
+  duration: 1,
+  opacity: 0, 
+  stagger:1,    
+  scrollTrigger: {
+    trigger: "#projects",
+    scroll:"body",
+    scrub:2,
+    start:"top 80%",
+    end:"top 30%"
+  }
+})
+ gsap.from(".slider", {
+  y:100,
+  duration: 1,
+  opacity: 0, 
+  stagger:1,    
+  scrollTrigger: {
+    trigger: ".slider",
+    scroll:"body",
+    scrub:2,
+    start:"top 80%",
+    end:"top 30%"
+  }
+})
+  })
+  
 
   return (
     <div id="projects">

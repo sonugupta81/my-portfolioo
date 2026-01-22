@@ -8,15 +8,17 @@ function nav() {
   let menuRef = useRef();
   let mobRef = useRef();
   useGSAP(()=>{
-gsap.from("nav h1",{
+    let t1 = gsap.timeline()
+t1.from("nav h1",{
   y:100,
   direction:1,
   opacity:0
 })
-gsap.from("nav li",{
+t1.from("nav ul li",{
   y:100,
   direction:1,
-  opacity:0
+  opacity:0,
+  stagger:1
 })
   })
   
