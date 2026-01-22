@@ -1,9 +1,9 @@
 import React from "react";
 import "./about.css";
 import Card1 from "../../Components/Card/card.jsx";  
-import img1 from "../../Assets/image/full.png";
-import img2 from "../../Assets/image/dsa.png";
-import img3 from "../../Assets/image/java.png";
+import img1 from "../../assets/image/full.png";
+import img2 from "../../assets/image/dsa.png";
+import img3 from "../../assets/image/java.png";
 function about() {
   return (
     <div id="about">
