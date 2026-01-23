@@ -2,6 +2,7 @@
 import React from 'react'
 import "./projects.css"
 import Card from '../../Components/Card/card.jsx';
+import img5 from '../../assets/image/hello.png'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/src/all";
@@ -49,17 +50,19 @@ function Projects() {
       <div className="slider">
         <Card 
           title="MovieHub" 
+          
           onClick={() => handleClick("https://moviehub-rose.vercel.app/")} 
         />
 
         <Card 
           title="Portfolio Website" 
-          onClick={() => handleClick("#")} 
+          onClick={() => handleClick("https://my-portfolioo-mu-nine.vercel.app/")} 
         />
 
         <Card 
-          title="E-Commerce App" 
-          onClick={() => handleClick("#")} 
+          title="resume Builder" 
+          img src={img5}
+          onClick={() => handleClick("https://resumebuild-alpha.vercel.app/")} 
         />
 
         <Card 
